@@ -1,0 +1,33 @@
+<h1>Add a new Report</h1>
+<%= form_for @policereport, :url => create_report_path do |form| %>
+
+  <div>
+    <%= form.label :description, "Description:" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :name, "Name:" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :city, "City:" %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div>
+    <%= form.label :state, "State:" %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div>
+    <%= form.label :phonenumber, "Phone Number:" %>
+    <%= form.text_field :phonenumber %>
+  </div>
+
+  <div class='buttons'>
+    <%= form.submit "Save" %>
+  </div>
+
+<% end %>
